@@ -11,19 +11,19 @@ client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
       
-  if (message.content.startsWith(adminprefix + 'sp')) {
+  if (message.content.startsWith(adminprefix + 'ply')) {
     client.user.setGame(argresult);
       message.channel.send(`**Status You   ${argresult}**`)
   } else 
-  if (message.content.startsWith(adminprefix + 'sw')) {
+  if (message.content.startsWith(adminprefix + 'wat')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
       message.channel.send(`**Status You   ${argresult}**`)
   } else 
-  if (message.content.startsWith(adminprefix + 'sl')) {
+  if (message.content.startsWith(adminprefix + 'lis')) {
   client.user.setActivity(argresult , {type:'LISTENING'});
       message.channel.send(`**Status You  ${argresult}**`)
   } else 
-  if (message.content.startsWith(adminprefix + 'ss')) {
+  if (message.content.startsWith(adminprefix + 'st')) {
     client.user.setGame(argresult, "https://www.twitch.tv/M3roof");
       message.channel.send(`**Status You ${argresult} **`)
 }
