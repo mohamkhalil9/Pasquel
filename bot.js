@@ -7,7 +7,7 @@ client.on('ready', () => {
 });
 const adminprefix = "^";
 
-const developers = ["403231129680740353","id"]
+const developers = ["415142691282616330","id"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
